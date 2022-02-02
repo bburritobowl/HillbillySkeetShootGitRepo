@@ -1,29 +1,9 @@
 fileFormatVersion: 2
-guid: 8e783d8a7d76ee24899135a21f639f9a
+guid: 210d0a306993b0d44810d3f6421b0eed
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: BlueLaquer
-    second: {fileID: 2100000, guid: 646b3a6c13c4fa8459e2fc42eacb3310, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Felt
-    second: {fileID: 2100000, guid: a233cf5be9039b041a5b22c4883d5a4b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: RedLaquer
-    second: {fileID: 2100000, guid: bb588c95cc763c1479ad1ae0a296c287, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: YellowLaquer
-    second: {fileID: 2100000, guid: 7dcf80a31c7b070428b7786301b5eebc, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
