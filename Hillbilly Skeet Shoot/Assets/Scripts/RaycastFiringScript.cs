@@ -35,23 +35,12 @@ public class RaycastFiringScript : MonoBehaviour
         //Play gunshot noise
         //audioSource.PlayOneShot(gunshot[0], volume);
 
-        //Get the current of the current positon of the mouse
-        Vector2 mousePos2D = Input.mousePosition;
-        //mousePos2D.z = -mainCamera.transform.position.z;
-        Vector3 mousePos3D = new Vector3 (mousePos2D.x, mousePos2D.y, mainCamera.transform.position.z);//mainCamera.ScreenToWorldPoint(mousePos2D);
-
-        
-
-        // Bit shift the index of the layer (0) to get a bit mask (used in the IF below)
-        //int layerMask = 1 << 0;
-
         RaycastHit hit;
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
 
          // Does the ray intersect any objects in the Default layer?
-        if (Physics.Raycast(ray, out hit, Mathf.Infinity/*, layerMask*/))
+        if (Physics.Raycast(ray, out hit))
         {
-            Debug.DrawRay(mousePos3D, transform.TransformDirection(Vector3.forward) * hit.distance, Color.red, 3.0f);
             Debug.Log("Did Hit - " + hit.transform.name);
 
             if (hit.rigidbody != null)

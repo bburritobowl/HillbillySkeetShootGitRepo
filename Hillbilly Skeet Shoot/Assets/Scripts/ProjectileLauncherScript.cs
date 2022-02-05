@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CannonBallLauncher : MonoBehaviour
+public class ProjectileLauncherScript : MonoBehaviour
 {
     public float launchTimer = 5f;
     public GameObject cannonBall;
