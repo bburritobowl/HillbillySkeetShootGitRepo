@@ -5,11 +5,11 @@ using UnityEngine;
 public class ProjectileLauncherScript : MonoBehaviour
 {
     public float launchTimer = 5f;
-    public GameObject cannonBall;
+    public GameObject[] projectiles;
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("LaunchCannonBalls", launchTimer, launchTimer);
+        InvokeRepeating("LaunchProjectiles", launchTimer, launchTimer);
     }
 
     // Update is called once per frame
@@ -18,8 +18,9 @@ public class ProjectileLauncherScript : MonoBehaviour
         
     }
 
-    void LaunchCannonBalls()
+    void LaunchProjectiles()
     {
-        Instantiate(cannonBall, transform.position, transform.rotation);
+        int randomObject = Random.Range(0, projectiles.Length);
+        Instantiate(projectiles[randomObject], transform.position, transform.rotation);
     }
 }
