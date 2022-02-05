@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CannonBallVelocity : MonoBehaviour
+public class ProjectileVelocityScript : MonoBehaviour
 {
     public float startSpeed = 25f;
     public float selfDestructTimer = 0f;
