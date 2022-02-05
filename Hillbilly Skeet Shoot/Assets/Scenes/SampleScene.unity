@@ -212,11 +212,41 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382758902}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.0624, y: 1, z: 56.20752}
+  m_LocalPosition: {x: 2.0624, y: 1, z: 57.33}
   m_LocalScale: {x: 21.756039, y: 65.54848, z: 2.1474}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &405682467
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 405682468}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &405682468
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405682467}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.6517525, y: 6.574834, z: 52.28964}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &478153298
 PrefabInstance:
@@ -1156,7 +1186,7 @@ GameObject:
   - component: {fileID: 1761269068}
   - component: {fileID: 1761269070}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: GunManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1170,11 +1200,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1761269066}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.131464, y: 1.0365067, z: 64.29004}
+  m_LocalPosition: {x: 13.131464, y: 1.0365067, z: 29.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1761269068
 AudioSource:
@@ -1286,8 +1316,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitForce: 2000
   audioSource: {fileID: 1761269068}
-  gunshot: []
-  volume: 4
+  gunshot: {fileID: 8300000, guid: ee8701f7a74f4794786799a5d586fda1, type: 3}
+  volume: 1
 --- !u!120 &1761269070
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -1307,7 +1337,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bb588c95cc763c1479ad1ae0a296c287, type: 2}
+  - {fileID: -382652638819485698, guid: 0b1178dcc788dab4697f1e8cb6b187b4, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1330,7 +1360,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 1}
+  - {x: 0, y: 0, z: 150.53831}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1

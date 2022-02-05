@@ -9,7 +9,7 @@ public class RaycastFiringScript : MonoBehaviour
     //Particle and sound variables
     //public ParticleSystem muzzleBlast;
     public AudioSource audioSource;
-    public AudioClip[] gunshot;
+    public AudioClip gunshot;
     [SerializeField] float volume = 4.0f;
     // public GameObject bulletHoleParticles;
     // public GameObject boomBoomParticles;
@@ -33,7 +33,7 @@ public class RaycastFiringScript : MonoBehaviour
     void FireTheGun()
     {
         //Play gunshot noise
-        //audioSource.PlayOneShot(gunshot[0], volume);
+        audioSource.PlayOneShot(gunshot, volume);
 
         RaycastHit hit;
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
