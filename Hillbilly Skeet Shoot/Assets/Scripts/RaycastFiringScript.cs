@@ -47,6 +47,7 @@ public class RaycastFiringScript : MonoBehaviour
             {
                 // blast it away!
                 hit.rigidbody.AddForce (-hit.normal * hitForce);
+                hit.transform.SendMessage ("HitByRay");
                 // this particle system is the BIG BOOM for when we hit cars or other objects that we send flying
                 // GameObject tempBoomEffect;
                 // tempBoomEffect = Instantiate(boomBoomParticles, hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal)) as GameObject;

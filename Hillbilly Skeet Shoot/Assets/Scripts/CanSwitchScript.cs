@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class CanSwitchScript : MonoBehaviour
 {
+    public GameObject[] cans;
+    [SerializeField] int activeCan = 0;
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public void HitByRay()
     {
-        
+        cans[activeCan].SetActive(false);
+        activeCan++;
+        cans[activeCan].SetActive(true);
     }
 }
