@@ -24,9 +24,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5844331161365859299}
-  m_LocalRotation: {x: -0.548615, y: -0.39556032, z: -0.5784382, w: 0.45602947}
+  m_LocalRotation: {x: -0.5486163, y: -0.39555782, z: -0.57843775, w: 0.45603058}
   m_LocalPosition: {x: -2.3, y: -2.93, z: -2.28}
-  m_LocalScale: {x: 47.780952, y: 47.780956, z: 47.78094}
+  m_LocalScale: {x: 47.78095, y: 47.78096, z: 47.780945}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -43,6 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62cce853e35c1264fbf57581935c2a4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  launchTimer: 5
-  cannonBall: {fileID: 2435052216520930590, guid: f8124003748a69d4a93f894234db49a1,
-    type: 3}
+  launchTimer: 2
+  projectiles:
+  - {fileID: 3430898322791213690, guid: 1449848eee559e64081e0c60fe860dc6, type: 3}
+  - {fileID: 1843900928978197700, guid: 6b768b6a7b397714da7077168944c49f, type: 3}
+  - {fileID: 2435052216520930590, guid: f8124003748a69d4a93f894234db49a1, type: 3}
