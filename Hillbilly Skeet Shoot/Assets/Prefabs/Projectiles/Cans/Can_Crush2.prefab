@@ -13,13 +13,14 @@ GameObject:
   - component: {fileID: 7371146570730456882}
   - component: {fileID: 8181359787692842057}
   - component: {fileID: 8181359787692842056}
+  - component: {fileID: 2275566531247765673}
   m_Layer: 0
   m_Name: Can_Crush2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8503005124676140125
 Transform:
   m_ObjectHideFlags: 0
@@ -113,3 +114,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -434707131000689134, guid: 80c8b166992354a4aaee1cc7e351bcc9, type: 3}
+--- !u!114 &2275566531247765673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9028431583158593255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8924870ed7ce7494a87c7bd5a7fd7ff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canSwitchScript: {fileID: 0}

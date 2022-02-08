@@ -13,13 +13,14 @@ GameObject:
   - component: {fileID: 6737173339365673419}
   - component: {fileID: 5385930035410310472}
   - component: {fileID: 5385930035410310473}
+  - component: {fileID: 5777730217545727512}
   m_Layer: 0
   m_Name: Can_Crush3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5563093059215848100
 Transform:
   m_ObjectHideFlags: 0
@@ -113,3 +114,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5777730217545727512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5079993331840198686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8924870ed7ce7494a87c7bd5a7fd7ff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canSwitchScript: {fileID: 0}

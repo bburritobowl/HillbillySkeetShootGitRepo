@@ -8,8 +8,9 @@ public class CanSwitchScript : MonoBehaviour
     [SerializeField] int activeCan = 0;
     // Start is called before the first frame update
 
-    public void HitByRay()
+    public void WasHit()
     {
+        Debug.Log("Message Received");
         cans[activeCan].SetActive(false);
         activeCan++;
         cans[activeCan].SetActive(true);
