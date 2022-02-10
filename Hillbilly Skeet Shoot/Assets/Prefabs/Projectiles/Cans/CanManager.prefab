@@ -130,6 +130,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Can_Whole
       objectReference: {fileID: 0}
+    - target: {fileID: 2551554911026761607, guid: b949dd0448d71284b99dd4f99dd335e1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2892191673244652861, guid: b949dd0448d71284b99dd4f99dd335e1,
         type: 3}
       propertyPath: m_RootOrder
@@ -353,6 +358,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Can_Crush1
       objectReference: {fileID: 0}
+    - target: {fileID: 2946101219398681076, guid: 6bb6ebcd2ed06974da120a17c877ee20,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6893835536519253935, guid: 6bb6ebcd2ed06974da120a17c877ee20,
         type: 3}
       propertyPath: canSwitchScript
@@ -444,6 +454,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Can_Crush2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028431583158593255, guid: abf10301c2ce4c640894431d684fb5fb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8181359787692842057, guid: abf10301c2ce4c640894431d684fb5fb, type: 3}
