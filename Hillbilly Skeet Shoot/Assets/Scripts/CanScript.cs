@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class CanScript : MonoBehaviour
 {
-    public CanSwitchScript canSwitchScript;
+    public CanManagerScript canManagerScript;
     void Start()
     {
-        canSwitchScript = this.gameObject.transform.parent.GetComponent<CanSwitchScript>();
+        canManagerScript = this.gameObject.transform.parent.GetComponent<CanManagerScript>();
     }
     public void HitByRay()
     {
-        canSwitchScript.WasHit();
+        canManagerScript.WasHit();
     }
 }
