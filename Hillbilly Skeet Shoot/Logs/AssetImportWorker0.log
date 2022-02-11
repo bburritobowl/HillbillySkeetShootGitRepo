@@ -727,3 +727,119 @@ Received Import Request.
 Start importing Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt using Guid(6e59c59b81ab47f9b6ec5781fa725d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1de9340bd449fe78fab62280ef4eb436') in 0.039605 seconds 
   Import took 0.050150 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013331 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.54 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.409 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2410ms)
+		BeginReloadAssembly (212ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (55ms)
+		EndReloadAssembly (1866ms)
+			LoadAssemblies (253ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (790ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (83ms)
+			SetupLoadedEditorAssemblies (532ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (193ms)
+				ProcessInitializeOnLoadAttributes (289ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.14 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2434 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.5 MB.
+System memory in use after: 100.7 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2942.
+Total: 7.220000 ms (FindLiveObjects: 0.538400 ms CreateObjectMapping: 0.272100 ms MarkObjects: 6.346300 ms  DeleteObjects: 0.061300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 270.714477 seconds.
+  path: Assets/Materials/Wood
+  artifactKey: Guid(f8703fe2bcd60b24894860f4236413f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Wood using Guid(f8703fe2bcd60b24894860f4236413f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b31bd3b324216e97bf9e598fca245c41') in 0.025029 seconds 
+  Import took 0.036433 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.012837 seconds.
+  path: Assets/Materials/Aged_Wood_Planks_normal.png
+  artifactKey: Guid(2369606d754c71a409fb2be701b1329e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Aged_Wood_Planks_normal.png using Guid(2369606d754c71a409fb2be701b1329e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd1ac17f10e7a7effab6571d1e322c48') in 0.378548 seconds 
+  Import took 0.389772 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.655149 seconds.
+  path: Assets/Materials/Aged_Wood_Planks_roughness.png
+  artifactKey: Guid(4dcca22df59f7074b80f496964bf1d12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Aged_Wood_Planks_roughness.png using Guid(4dcca22df59f7074b80f496964bf1d12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac33bc2d62546bbbc8574bad1e014690') in 0.037963 seconds 
+  Import took 0.076771 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.660330 seconds.
+  path: Assets/Materials/Aged_Wood_Planks_height.png
+  artifactKey: Guid(aed77761e23158c49bbe793dc00f0cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Aged_Wood_Planks_height.png using Guid(aed77761e23158c49bbe793dc00f0cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c3dc55106dba8a0fab0812c94aa58be') in 0.051298 seconds 
+  Import took 0.067003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.779979 seconds.
+  path: Assets/Materials/Physics
+  artifactKey: Guid(13a50d3bfc9f3c14897e942cf21a8583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Physics using Guid(13a50d3bfc9f3c14897e942cf21a8583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '220f5707e4cb780d8c655ed6076f2dfd') in 0.016824 seconds 
+  Import took 0.027232 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.097060 seconds.
+  path: Assets/Materials/RubberBouncy.physicMaterial
+  artifactKey: Guid(a5645494f24348d4e9a40e4db1acf68b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/RubberBouncy.physicMaterial using Guid(a5645494f24348d4e9a40e4db1acf68b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f91fa8b21de7f76a1833604279875c24') in 0.026762 seconds 
+  Import took 0.038095 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.337136 seconds.
+  path: Assets/Materials/MetalCan.physicMaterial
+  artifactKey: Guid(18d908faf6457374a8ae6a9e54f6a145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/MetalCan.physicMaterial using Guid(18d908faf6457374a8ae6a9e54f6a145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da658927043297030ada81c10c6ea898') in 0.017165 seconds 
+  Import took 0.026725 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
