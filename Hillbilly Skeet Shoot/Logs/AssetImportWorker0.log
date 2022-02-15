@@ -692,3 +692,4 @@ Received Import Request.
 Start importing Assets/Prefabs/Projectiles/RubberChicken.prefab using Guid(e6e388ead6cd06543b2fc287e230e268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee39a2137ff8c8c209e78d2e11940927') in 0.120584 seconds 
   Import took 0.130101 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
