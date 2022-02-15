@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8924870ed7ce7494a87c7bd5a7fd7ff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canSwitchScript: {fileID: 7087318023549577297}
+  canManagerScript: {fileID: 7087318023549577297}
 --- !u!1001 &3495932103384853554
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -123,6 +123,11 @@ PrefabInstance:
     - target: {fileID: 895022619985507354, guid: b949dd0448d71284b99dd4f99dd335e1,
         type: 3}
       propertyPath: canSwitchScript
+      value: 
+      objectReference: {fileID: 7087318023549577297}
+    - target: {fileID: 895022619985507354, guid: b949dd0448d71284b99dd4f99dd335e1,
+        type: 3}
+      propertyPath: canManagerScript
       value: 
       objectReference: {fileID: 7087318023549577297}
     - target: {fileID: 2551554911026761607, guid: b949dd0448d71284b99dd4f99dd335e1,
@@ -276,6 +281,11 @@ PrefabInstance:
       propertyPath: canSwitchScript
       value: 
       objectReference: {fileID: 7087318023549577297}
+    - target: {fileID: 5777730217545727512, guid: 7ba599e6efe0ce140a8d35abe9de0b58,
+        type: 3}
+      propertyPath: canManagerScript
+      value: 
+      objectReference: {fileID: 7087318023549577297}
     m_RemovedComponents:
     - {fileID: 5385930035410310473, guid: 7ba599e6efe0ce140a8d35abe9de0b58, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ba599e6efe0ce140a8d35abe9de0b58, type: 3}
@@ -368,6 +378,11 @@ PrefabInstance:
       propertyPath: canSwitchScript
       value: 
       objectReference: {fileID: 7087318023549577297}
+    - target: {fileID: 6893835536519253935, guid: 6bb6ebcd2ed06974da120a17c877ee20,
+        type: 3}
+      propertyPath: canManagerScript
+      value: 
+      objectReference: {fileID: 7087318023549577297}
     m_RemovedComponents:
     - {fileID: 2604152208129244326, guid: 6bb6ebcd2ed06974da120a17c877ee20, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6bb6ebcd2ed06974da120a17c877ee20, type: 3}
@@ -393,6 +408,11 @@ PrefabInstance:
     - target: {fileID: 2275566531247765673, guid: abf10301c2ce4c640894431d684fb5fb,
         type: 3}
       propertyPath: canSwitchScript
+      value: 
+      objectReference: {fileID: 7087318023549577297}
+    - target: {fileID: 2275566531247765673, guid: abf10301c2ce4c640894431d684fb5fb,
+        type: 3}
+      propertyPath: canManagerScript
       value: 
       objectReference: {fileID: 7087318023549577297}
     - target: {fileID: 8503005124676140125, guid: abf10301c2ce4c640894431d684fb5fb,

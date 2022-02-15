@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CanSwitchScript : MonoBehaviour
+public class CanManagerScript : MonoBehaviour
 {
     public GameObject[] cans;
     [SerializeField] int activeCan = 0;
