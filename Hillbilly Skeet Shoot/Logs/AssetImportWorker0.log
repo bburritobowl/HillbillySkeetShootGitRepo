@@ -360,3 +360,12 @@ Received Import Request.
 Start importing Assets/Prefabs/TestObjects using Guid(51bbebb576af3094695e2cc38987f18d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26279d62d277e6a9146c0c4bf8ced94a') in 0.014715 seconds 
   Import took 0.026720 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 3174.953541 seconds.
+  path: Assets/Prefabs/TestObjects/TestPropaneTank.prefab
+  artifactKey: Guid(dd2cd81c94007f045ad747911791aabd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TestObjects/TestPropaneTank.prefab using Guid(dd2cd81c94007f045ad747911791aabd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a06ef58e3e1265734567069afc928d9') in 0.263922 seconds 
+  Import took 0.279133 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
