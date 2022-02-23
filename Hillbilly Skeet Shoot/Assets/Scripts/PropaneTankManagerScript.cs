@@ -5,12 +5,14 @@ using UnityEngine.Audio;
 
 public class PropaneTankManagerScript : MonoBehaviour
 {
+    public GameManagerScript gameManagerScript;
     [SerializeField] int hit = 0;
     public GameObject explosionParticles;
     public AudioClip explosionAudioClip;
     public AudioSource audioSource;
     public float volume = 3.0f;
-    public void WasHit()
+
+    public void HitByRay()
     {
         hit++;
         switch(hit)
@@ -32,10 +34,10 @@ public class PropaneTankManagerScript : MonoBehaviour
 
     private void Explode()
     {
-        GameManagerScript.lives--;
+        gameManagerScript.LoseALife();
         GameObject tempExplosionEffect;
         tempExplosionEffect = Instantiate(explosionParticles, gameObject.transform.position, gameObject.transform.rotation) as GameObject;
-        Destroy(tempExplosionEffect, 3.0f);
+        Destroy(tempExplosionEffect, 2.0f);
         audioSource.PlayOneShot(explosionAudioClip, volume);
         Destroy(gameObject);
     }

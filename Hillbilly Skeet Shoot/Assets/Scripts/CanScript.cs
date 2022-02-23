@@ -5,10 +5,7 @@ using UnityEngine;
 public class CanScript : MonoBehaviour
 {
     public CanManagerScript canManagerScript;
-    void Start()
-    {
-        canManagerScript = this.gameObject.transform.parent.GetComponent<CanManagerScript>();
-    }
+    
     public void HitByRay()
     {
         canManagerScript.WasHit();

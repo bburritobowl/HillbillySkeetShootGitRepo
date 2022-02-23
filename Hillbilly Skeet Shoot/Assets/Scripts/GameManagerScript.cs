@@ -14,6 +14,10 @@ public class GameManagerScript : MonoBehaviour
     public TextMeshProUGUI highScoreText;
 
     public static int lives = 3;
+    public GameObject[] livesUI;
+
+    public GameObject playScreen;
+    public GameObject gameOverScreen;
 
     // Start is called before the first frame update
     void Start()
@@ -30,5 +34,20 @@ public class GameManagerScript : MonoBehaviour
             PlayerPrefs.SetInt(HighScore, score);
             highScoreText.text = "Highscore: " + PlayerPrefs.GetInt(HighScore);
         }
+    }
+
+    public void LoseALife()
+    {
+        lives--;
+        livesUI[lives].SetActive(false);
+        if(lives <= 0)
+        {
+            GameOver();
+        }
+    }
+
+    public void GameOver()
+    {
+
     }
 }
