@@ -12,6 +12,8 @@ public class GameManagerScript : MonoBehaviour
     public static int score = 0;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI highScoreText;
+    public TextMeshProUGUI scoreText2;
+    public TextMeshProUGUI highScoreText2;
 
     public static int lives = 3;
     public GameObject[] livesUI;
@@ -23,6 +25,9 @@ public class GameManagerScript : MonoBehaviour
     void Start()
     {
         highScoreText.text = "Highscore: " + PlayerPrefs.GetInt(HighScore);
+        playScreen.SetActive(true);
+        gameOverScreen.SetActive(false);
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
@@ -48,6 +53,16 @@ public class GameManagerScript : MonoBehaviour
 
     public void GameOver()
     {
+        playScreen.SetActive(false);
+        gameOverScreen.SetActive(true);
+        scoreText2.text = "Score: " + score;
+        highScoreText2.text = "Highscore: " + PlayerPrefs.GetInt(HighScore);
+        Time.timeScale = 0;
+    }
 
+    //buttons
+    public void LoadSceneButton(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 }
