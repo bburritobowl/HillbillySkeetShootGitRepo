@@ -9,7 +9,7 @@ public class GameManagerScript : MonoBehaviour
 {
     public static int highScore;
     private string HighScore =  "HighScore";
-    public static int score = 0;
+    public static int score = 0; 
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI highScoreText;
     public TextMeshProUGUI scoreText2;
