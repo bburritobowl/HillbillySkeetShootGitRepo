@@ -13,6 +13,7 @@ public class ChickenManagerScript : MonoBehaviour
     {
         GameManagerScript.score += 3;
         Destroy(gameObject);
+        audioSource.PlayOneShot(chickenSqueak);
     }
 
     void OnCollisionEnter(Collision other)
