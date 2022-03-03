@@ -9,13 +9,6 @@ public class ChickenManagerScript : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip chickenSqueak;
 
-    public void HitByRay()
-    {
-        GameManagerScript.score += 3;
-        Destroy(gameObject);
-        audioSource.PlayOneShot(chickenSqueak);
-    }
-
     void OnCollisionEnter(Collision other)
     {
         audioSource.PlayOneShot(chickenSqueak);
