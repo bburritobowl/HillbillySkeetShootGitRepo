@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6020972321604106352}
   - component: {fileID: 338236485889083700}
   - component: {fileID: -2513037840835268463}
+  - component: {fileID: 3443813569309510469}
   m_Layer: 0
   m_Name: RedApple
   m_TagString: Untagged
@@ -240,3 +241,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3443813569309510469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880895532972178832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1406ef3c4084eac429d636e69a2dd052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startSpeed: 25
+  selfDestructTimer: 0
