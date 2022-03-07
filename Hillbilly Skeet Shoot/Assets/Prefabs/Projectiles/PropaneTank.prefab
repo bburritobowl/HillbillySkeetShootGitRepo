@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 8095406403792266456}
   - component: {fileID: 8634522342153982693}
   - component: {fileID: 2659200238622413799}
-  - component: {fileID: 4710848697015844125}
   - component: {fileID: 6323352693641709809}
   - component: {fileID: 8501136816668840979}
   - component: {fileID: 59301512771722599}
   - component: {fileID: 4109581037693867292}
+  - component: {fileID: 7480390826595410164}
   m_Layer: 0
-  m_Name: TestPropaneTank
+  m_Name: PropaneTank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,7 +44,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2327982482823073499}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 337590242344213853, guid: 7542d41e4a2ad784da53a13ddc0e86a1, type: 3}
 --- !u!23 &2659200238622413799
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a233cf5be9039b041a5b22c4883d5a4b, type: 2}
+  - {fileID: 2100000, guid: ae3d7c7e75d71aa489eb390fe3c8ac67, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -86,20 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &4710848697015844125
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2327982482823073499}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6323352693641709809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,6 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 461cf2ea7fa14ca4187970ecda8da779, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManagerScript: {fileID: 0}
   hit: 0
   explosionParticles: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
     type: 3}
@@ -244,3 +231,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!64 &7480390826595410164
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2327982482823073499}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 337590242344213853, guid: 7542d41e4a2ad784da53a13ddc0e86a1, type: 3}
