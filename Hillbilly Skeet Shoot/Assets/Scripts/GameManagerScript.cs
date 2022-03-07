@@ -64,5 +64,6 @@ public class GameManagerScript : MonoBehaviour
     public void LoadSceneButton(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+        //Look up reload scene
     }
 }
