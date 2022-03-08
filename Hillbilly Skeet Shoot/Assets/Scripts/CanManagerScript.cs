@@ -31,6 +31,7 @@ public class CanManagerScript : MonoBehaviour
 
             case 4:
             GameManagerScript.score += 5;
+            Destroy(gameObject);
             break;
         }
         cans[activeCan].SetActive(false);
