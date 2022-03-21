@@ -11,20 +11,23 @@ public class PropaneTankManagerScript : MonoBehaviour
     public AudioClip explosionAudioClip;
     public AudioSource audioSource;
     public float volume = 3.0f;
-
+    public void Start()
+    {
+        gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
+    }
     public void HitByRay()
     {
         hit++;
         switch(hit)
         {
             case 1:
-            GameManagerScript.score += 5;
+            gameManagerScript.score += 5;
             break;
             case 2:
-            GameManagerScript.score += 10;
+            gameManagerScript.score += 10;
             break;
             case 3:
-            GameManagerScript.score += 15;
+            gameManagerScript.score += 15;
             break;
             case 4:
             Explode();
