@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ProjectileLauncherScript : MonoBehaviour
 {
-    public float launchTimer = 5f;
+    public float launchTimer;
     public List<GameObject> projectiles;
     public GameObject[] secondaryObjects;
     public GameObject[] explodingObjects;

@@ -68,5 +68,5 @@ public class RaycastFiringScript : MonoBehaviour
             // Debug.DrawRay(muzzleTransform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.blue, 3.0f);
             Debug.Log("Did not Hit");
         }
-           }
+    }
 }
