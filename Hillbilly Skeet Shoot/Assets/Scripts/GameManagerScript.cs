@@ -7,26 +7,25 @@ using TMPro;
 
 public class GameManagerScript : MonoBehaviour
 {
-    public static int highScore;
+    public int highScore;
     private string HighScore =  "HighScore";
-    public static int score = 0; 
+    private string Score = "Score";
+    public int score = 0;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI highScoreText;
-    public TextMeshProUGUI scoreText2;
-    public TextMeshProUGUI highScoreText2;
-
-    public static int lives = 3;
+    public int lives = 3;
     public GameObject[] livesUI;
 
     public GameObject playScreen;
-    public GameObject gameOverScreen;
+    public GameObject pauseScreen;
 
     // Start is called before the first frame update
     void Start()
     {
+        score = 0;
         highScoreText.text = "Highscore: " + PlayerPrefs.GetInt(HighScore);
         playScreen.SetActive(true);
-        gameOverScreen.SetActive(false);
+        pauseScreen.SetActive(false);
         Time.timeScale = 1;
     }
 
@@ -53,17 +52,25 @@ public class GameManagerScript : MonoBehaviour
 
     public void GameOver()
     {
-        playScreen.SetActive(false);
-        gameOverScreen.SetActive(true);
-        scoreText2.text = "Score: " + score;
-        highScoreText2.text = "Highscore: " + PlayerPrefs.GetInt(HighScore);
-        Time.timeScale = 0;
+        PlayerPrefs.SetInt(Score, score);
+        SceneManager.LoadScene("GameOverScene");
     }
 
     //buttons
     public void LoadSceneButton(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
-        //Look up reload scene
+    }
+    public void PauseGame()
+    {
+        pauseScreen.SetActive(true);
+        playScreen.SetActive(false);
+        Time.timeScale = 0;
+    }
+    public void Resume()
+    {
+        pauseScreen.SetActive(false);
+        playScreen.SetActive(true);
+        Time.timeScale = 1;
     }
 }

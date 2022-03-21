@@ -286,8 +286,7 @@ PrefabInstance:
       propertyPath: canManagerScript
       value: 
       objectReference: {fileID: 7087318023549577297}
-    m_RemovedComponents:
-    - {fileID: 5385930035410310473, guid: 7ba599e6efe0ce140a8d35abe9de0b58, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ba599e6efe0ce140a8d35abe9de0b58, type: 3}
 --- !u!1 &8991005318127462004 stripped
 GameObject:
