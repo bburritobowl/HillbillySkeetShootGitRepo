@@ -10,13 +10,20 @@ public class ProjectileManagerScript : MonoBehaviour
     public AudioClip gotShotSFX;
     public GameObject particlePrefab;
     public int scoreIncrease;
+    public GameManagerScript gameManagerScript;
+
+    public void Start()
+    {
+        gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
+    }
     public void HitByRay()
     {
-        GameManagerScript.score += scoreIncrease;
-        GameObject tempBoomEffect;
-        tempBoomEffect = Instantiate(particlePrefab,gameObject.transform.position, Quaternion.identity) as GameObject;
-        Destroy(tempBoomEffect, 3.0f);
-        audioSource.PlayOneShot(gotShotSFX);
+        Debug.Log("Projectile Hit");
+        gameManagerScript.score += scoreIncrease;
+        // GameObject tempBoomEffect;
+        // tempBoomEffect = Instantiate(particlePrefab,gameObject.transform.position, Quaternion.identity) as GameObject;
+        // Destroy(tempBoomEffect, 3.0f);
+        // audioSource.PlayOneShot(gotShotSFX);
         Destroy(gameObject);
     }
 }
