@@ -43,11 +43,11 @@ public class GameManagerScript : MonoBehaviour
     public void LoseALife()
     {
         lives--;
+        livesUI[lives].SetActive(false);
         if(lives <= 0)
         {
             GameOver();
         }
-        livesUI[lives].SetActive(false);
     }
 
     public void GameOver()

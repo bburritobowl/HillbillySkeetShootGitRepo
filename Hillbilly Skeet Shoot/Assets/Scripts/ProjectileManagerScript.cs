@@ -20,10 +20,10 @@ public class ProjectileManagerScript : MonoBehaviour
     {
         Debug.Log("Projectile Hit");
         gameManagerScript.score += scoreIncrease;
-        GameObject tempBoomEffect;
-        tempBoomEffect = Instantiate(particlePrefab,gameObject.transform.position, Quaternion.identity) as GameObject;
-        Destroy(tempBoomEffect, 3.0f);
-        //audioSource.PlayOneShot(gotShotSFX);
+        // GameObject tempBoomEffect;
+        // tempBoomEffect = Instantiate(particlePrefab,gameObject.transform.position, Quaternion.identity) as GameObject;
+        // Destroy(tempBoomEffect, 3.0f);
+        // audioSource.PlayOneShot(gotShotSFX);
         Destroy(gameObject);
     }
 }

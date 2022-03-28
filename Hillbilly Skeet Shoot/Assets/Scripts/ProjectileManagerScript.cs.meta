@@ -3,12 +3,7 @@ guid: 07ce9f033a9f3bb4685b96db734b80c5
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - audioSource: {instanceID: 0}
-  - gotShotSFX: {instanceID: 0}
-  - particlePrefab: {fileID: 1337198075554910, guid: 25c7aa9ad705fe143a4d71c1c8deb7d4,
-      type: 3}
-  - gameManagerScript: {instanceID: 0}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
