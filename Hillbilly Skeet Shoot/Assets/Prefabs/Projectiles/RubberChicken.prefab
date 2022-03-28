@@ -254,6 +254,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 3335430040133480033}
-  gotShotSFX: {fileID: 0}
-  particlePrefab: {fileID: 0}
+  gotShotSFX: {fileID: 8300000, guid: a220acceb1f131248ad059bbba580599, type: 3}
+  particlePrefab: {fileID: 1240250018707908, guid: 5656e7ea1f1a75d4c895547ec2b824b3,
+    type: 3}
   scoreIncrease: 0
+  gameManagerScript: {fileID: 0}
