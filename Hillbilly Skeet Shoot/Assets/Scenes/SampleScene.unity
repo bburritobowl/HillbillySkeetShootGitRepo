@@ -1206,6 +1206,7 @@ MonoBehaviour:
   - {fileID: 701959131}
   playScreen: {fileID: 1469013296}
   pauseScreen: {fileID: 348503287}
+  adScript: {fileID: 0}
 --- !u!1001 &478153298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2137,8 +2138,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 623545227}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -43.82, z: 1.6098633}
-  m_LocalScale: {x: 22.789494, y: 1.1816779, z: 5.9765563}
+  m_LocalPosition: {x: 0, y: -62.42, z: 1.6098633}
+  m_LocalScale: {x: 22.789494, y: 29.137815, z: 5.9765563}
   m_Children: []
   m_Father: {fileID: 247305830}
   m_RootOrder: 5

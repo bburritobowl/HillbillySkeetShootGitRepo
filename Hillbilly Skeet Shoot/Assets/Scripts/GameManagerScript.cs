@@ -19,6 +19,8 @@ public class GameManagerScript : MonoBehaviour
     public GameObject playScreen;
     public GameObject pauseScreen;
 
+    public AdScript adScript;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,22 +45,24 @@ public class GameManagerScript : MonoBehaviour
     public void LoseALife()
     {
         lives--;
-        livesUI[lives].SetActive(false);
         if(lives <= 0)
         {
             GameOver();
         }
+        livesUI[lives].SetActive(false);
     }
 
     public void GameOver()
     {
         PlayerPrefs.SetInt(Score, score);
+        adScript.ShowInterstitialAd(); //play ad
         SceneManager.LoadScene("GameOverScene");
     }
 
     //buttons
     public void LoadSceneButton(string sceneName)
     {
+        adScript.ShowInterstitialAd();
         SceneManager.LoadScene(sceneName);
     }
     public void PauseGame()

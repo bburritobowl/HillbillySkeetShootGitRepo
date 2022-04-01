@@ -57,6 +57,7 @@ MonoBehaviour:
   - {fileID: 3984251726978706122}
   - {fileID: 8991005318127462004}
   activeCan: 0
+  gameManagerScript: {fileID: 0}
 --- !u!54 &1572100613663649976
 Rigidbody:
   m_ObjectHideFlags: 0
