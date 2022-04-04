@@ -23,7 +23,7 @@ public class ProjectileManagerScript : MonoBehaviour
         // GameObject tempBoomEffect;
         // tempBoomEffect = Instantiate(particlePrefab,gameObject.transform.position, Quaternion.identity) as GameObject;
         // Destroy(tempBoomEffect, 3.0f);
-        // audioSource.PlayOneShot(gotShotSFX);
+        audioSource.PlayOneShot(gotShotSFX);
         Destroy(gameObject);
     }
 }

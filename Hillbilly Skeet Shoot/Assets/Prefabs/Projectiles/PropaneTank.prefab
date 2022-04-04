@@ -116,7 +116,7 @@ MonoBehaviour:
   hit: 0
   explosionParticles: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
     type: 3}
-  explosionAudioClip: {fileID: 8300000, guid: a4e631b4c812fd44da3736a448f08a8d, type: 3}
+  explosionAudioClip: {fileID: 8300000, guid: 91b691e922853074e9eb364e982c09ff, type: 3}
   audioSource: {fileID: 4109581037693867292}
   volume: 3
 --- !u!54 &59301512771722599
@@ -242,6 +242,6 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 337590242344213853, guid: 7542d41e4a2ad784da53a13ddc0e86a1, type: 3}

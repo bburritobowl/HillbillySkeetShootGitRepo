@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 536563312712263466}
   - component: {fileID: 3521140805764360335}
   - component: {fileID: 1673489278453636165}
-  - component: {fileID: 9180988830842366253}
   - component: {fileID: 6620411040888137413}
   - component: {fileID: 6020972321604106352}
   - component: {fileID: 338236485889083700}
@@ -87,18 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &9180988830842366253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 880895532972178832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e32aad5ff6d38d94fbe3fc216c9a1d6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!64 &6620411040888137413
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -144,7 +131,8 @@ MonoBehaviour:
   audioSource: {fileID: -2513037840835268463}
   gotShotSFX: {fileID: 0}
   particlePrefab: {fileID: 0}
-  scoreIncrease: 0
+  scoreIncrease: 2
+  gameManagerScript: {fileID: 0}
 --- !u!82 &-2513037840835268463
 AudioSource:
   m_ObjectHideFlags: 0
