@@ -4255,6 +4255,7 @@ MonoBehaviour:
   audioSource: {fileID: 1761269068}
   gunshot: {fileID: 8300000, guid: ee8701f7a74f4794786799a5d586fda1, type: 3}
   volume: 1
+  sphereRadius: 224.5
 --- !u!1 &1815506800
 GameObject:
   m_ObjectHideFlags: 0

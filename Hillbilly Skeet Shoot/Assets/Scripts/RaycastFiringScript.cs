@@ -15,6 +15,8 @@ public class RaycastFiringScript : MonoBehaviour
     // public GameObject boomBoomParticles;
     private Camera mainCamera;
 
+    public float sphereRadius = 5f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,7 +45,8 @@ public class RaycastFiringScript : MonoBehaviour
         {
             Debug.Log("Did Hit - " + hit.transform.name);
 
-            if (hit.rigidbody != null)
+           // if (hit.rigidbody != null)
+           if(Physics.CheckSphere(hit.transform.position, sphereRadius))
             {
                 // blast it away!
                 hit.rigidbody.AddForce (-hit.normal * hitForce);

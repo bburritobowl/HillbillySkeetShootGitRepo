@@ -48,5 +48,7 @@ public class CanManagerScript : MonoBehaviour
         cans[activeCan].SetActive(false);
         activeCan++;
         cans[activeCan].SetActive(true);
+        //cans[activeCan].GetComponentInParent<Rigidbody>().AddForce(0, -50, 0);
+        //The commented out line above is to help the cans be more usable by launching them up again when hit. Not sure it worked
     }
 }
