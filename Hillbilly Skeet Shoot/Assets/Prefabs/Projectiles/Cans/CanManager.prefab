@@ -58,8 +58,6 @@ MonoBehaviour:
   - {fileID: 3984251726978706122}
   - {fileID: 8991005318127462004}
   activeCan: 0
-  gotShotSFX: {fileID: 8300000, guid: 7f55e020712cbf64eae0ed2cd4ce6cbd, type: 3}
-  audioSource: {fileID: 1704100574699884656}
   gameManagerScript: {fileID: 0}
 --- !u!54 &1572100613663649976
 Rigidbody:
