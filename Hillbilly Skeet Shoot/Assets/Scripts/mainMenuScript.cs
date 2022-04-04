@@ -31,8 +31,8 @@ public class mainMenuScript : MonoBehaviour
 
     public void settings()
     {
-        CuteOpeningScene.SetActive(true);
-        SettingsPanel.SetActive(false);
+        CuteOpeningScene.SetActive(false);
+        SettingsPanel.SetActive(true);
         MainMenuPanel.SetActive(false);
     }
 
@@ -41,6 +41,16 @@ public class mainMenuScript : MonoBehaviour
         //click anywhere to go to main menu panel
         CuteOpeningScene.SetActive(false);
         MainMenuPanel.SetActive(true);
+    }
+
+    public void ItemsMenu()
+    {
+        SceneManager.LoadScene("ItemShelf");
+    }
+
+    public void gotomainmenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
 }

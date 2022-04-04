@@ -703,8 +703,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46614608bead0148bdf5f56a2b63cde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  highScore: 0
+  score: 0
   scoreText: {fileID: 85662700}
   highScoreText: {fileID: 1003887356}
+  lives: 3
   livesUI: []
   playScreen: {fileID: 0}
   pauseScreen: {fileID: 0}
@@ -1453,7 +1456,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Menu
+          m_StringArgument: MainMenu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1911544540
