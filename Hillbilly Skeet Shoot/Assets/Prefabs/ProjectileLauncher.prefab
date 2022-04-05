@@ -43,8 +43,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62cce853e35c1264fbf57581935c2a4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  launchTimer: 2
+  launchTimer: 5
   projectiles:
   - {fileID: 3430898322791213690, guid: 1449848eee559e64081e0c60fe860dc6, type: 3}
-  - {fileID: 1843900928978197700, guid: 6b768b6a7b397714da7077168944c49f, type: 3}
-  - {fileID: 2435052216520930590, guid: f8124003748a69d4a93f894234db49a1, type: 3}
+  - {fileID: 7722585577845020334, guid: e6e388ead6cd06543b2fc287e230e268, type: 3}
+  secondaryObjects:
+  - {fileID: 6251446656456824353, guid: 538c412f102577b4cb113265c270d60f, type: 3}
+  - {fileID: 880895532972178832, guid: 33a300df8844d1b499dcf44b4d124264, type: 3}
+  - {fileID: 2448056299167106901, guid: 4c34727064f24014996c0e8599b5611a, type: 3}
+  explodingObjects:
+  - {fileID: 2327982482823073499, guid: dd2cd81c94007f045ad747911791aabd, type: 3}
+  timer: 0
