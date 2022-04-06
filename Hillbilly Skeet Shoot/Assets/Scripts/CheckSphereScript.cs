@@ -5,11 +5,12 @@ using UnityEngine;
 public class CheckSphereScript : MonoBehaviour
 {
     public float sphereRadius = 5f;
+    public float constantZPos = 0f;
     public float hitForce = 1000.0f;
     public AudioSource audioSource;
     public AudioClip gunshot;
     [SerializeField] float volume = 4.0f;
-     private Camera mainCamera;
+    private Camera mainCamera;
 
     // Start is called before the first frame update
     void Start()
@@ -33,14 +34,14 @@ public class CheckSphereScript : MonoBehaviour
 
         //get the information from the mouse click
         Vector3 checkSphereCenter;
-        checkSphereCenter.x = mousePosition.x;
-        checkSphereCenter.y = mousePosition.y; //Set the x and y positions to the mouse click ones
+        checkSphereCenter.x = Input.mousePosition.x;
+        checkSphereCenter.y = Input.mousePosition.y; //Set the x and y positions to the mouse click ones
         checkSphereCenter.z = constantZPos; //hardcode the z
         
         //use checksphere and put all your damagey things in it
-        if(CheckSphere(checkSphereCenter, radius))
+        if(CheckSphere(checkSphereCenter, sphereRadius))
         {
-            Collider[] objectsHit = Physics.OverlapSphere(checkSphereCenter, radius);
+            Collider[] objectsHit = Physics.OverlapSphere(checkSphereCenter, sphereRadius);
             foreach(Collider hits in objectsHit)
                 if(hits.gameObject.CompareTag("HittableObject"))
                 {
