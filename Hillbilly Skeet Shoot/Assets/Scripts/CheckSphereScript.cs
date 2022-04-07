@@ -5,6 +5,7 @@ using UnityEngine;
 public class CheckSphereScript : MonoBehaviour
 {
     public float sphereRadius = 5f;
+    private Vector3 checkSphereCenter;
     public float constantZPos = 0f;
     public float hitForce = 1000.0f;
     public AudioSource audioSource;
@@ -33,20 +34,25 @@ public class CheckSphereScript : MonoBehaviour
         audioSource.PlayOneShot(gunshot, volume);
 
         //get the information from the mouse click
-        Vector3 checkSphereCenter;
-        checkSphereCenter.x = mainCamera.ScreenToWorldPoint(Input.mousePosition.x);
-        checkSphereCenter.y = mainCamera.ScreenToWorldPoint(Input.mousePosition.y); //Set the x and y positions to the mouse click ones
+        // Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+        //Debug.Log(Input.mousePosition + "Where the mouse");
+        // Vector3 temp = Input.mousePosition;
+        // Vector3 checkSphereCenter = new Vector3();
+        
+        checkSphereCenter.x = Input.mousePosition.x;//Set the x and y positions to the mouse click ones
+        checkSphereCenter.y = Input.mousePosition.y;
         checkSphereCenter.z = constantZPos; //hardcode the z
+        Debug.Log(checkSphereCenter + "Where the sphere");
         
         //use checksphere and put all your damagey things in it
-        if(CheckSphere(checkSphereCenter, sphereRadius))
+        if(Physics.CheckSphere(checkSphereCenter, sphereRadius))
         {
             Collider[] objectsHit = Physics.OverlapSphere(checkSphereCenter, sphereRadius);
             foreach(Collider hits in objectsHit)
-                if(hits.gameObject.CompareTag("HittableObject"))
+                if(hits.gameObject.CompareTag("Projectile"))
                 {
-                    other.rigidbody.AddForce (-hit.normal * hitForce);
-                    other.transform.SendMessage ("HitByRay");
+                    //hits.GetComponent<Rigidbody>().AddForce (-hit.normal * hitForce);
+                    hits.transform.SendMessage ("HitByRay");
                 }
         }
     }

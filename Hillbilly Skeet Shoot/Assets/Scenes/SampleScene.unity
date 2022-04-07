@@ -3318,6 +3318,36 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
+--- !u!1 &1211635283
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1211635284}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1211635284
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211635283}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.31, y: 4.71, z: 53.75}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1288242011
 GameObject:
   m_ObjectHideFlags: 0
@@ -4072,6 +4102,7 @@ GameObject:
   - component: {fileID: 1761269067}
   - component: {fileID: 1761269069}
   - component: {fileID: 1761269068}
+  - component: {fileID: 1761269070}
   m_Layer: 0
   m_Name: GunManager
   m_TagString: Untagged
@@ -4196,7 +4227,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1761269066}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4891e97f4f1b0244db357641c7d45ce5, type: 3}
   m_Name: 
@@ -4206,6 +4237,24 @@ MonoBehaviour:
   gunshot: {fileID: 8300000, guid: ee8701f7a74f4794786799a5d586fda1, type: 3}
   volume: 1
   sphereRadius: 224.5
+--- !u!114 &1761269070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761269066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cb86221195ab064f89c6300b66fd4aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sphereRadius: 10
+  constantZPos: 53.75
+  hitForce: 1000
+  audioSource: {fileID: 1761269068}
+  gunshot: {fileID: 8300000, guid: ee8701f7a74f4794786799a5d586fda1, type: 3}
+  volume: 4
 --- !u!1 &1815506800
 GameObject:
   m_ObjectHideFlags: 0
