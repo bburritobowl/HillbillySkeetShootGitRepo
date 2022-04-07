@@ -34,8 +34,8 @@ public class CheckSphereScript : MonoBehaviour
 
         //get the information from the mouse click
         Vector3 checkSphereCenter;
-        checkSphereCenter.x = Input.mousePosition.x;
-        checkSphereCenter.y = Input.mousePosition.y; //Set the x and y positions to the mouse click ones
+        checkSphereCenter.x = mainCamera.ScreenToWorldPoint(Input.mousePosition.x);
+        checkSphereCenter.y = mainCamera.ScreenToWorldPoint(Input.mousePosition.y); //Set the x and y positions to the mouse click ones
         checkSphereCenter.z = constantZPos; //hardcode the z
         
         //use checksphere and put all your damagey things in it
