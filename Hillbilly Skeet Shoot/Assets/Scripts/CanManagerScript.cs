@@ -9,6 +9,7 @@ public class CanManagerScript : MonoBehaviour
     public AudioClip gotShotSFX;
     public AudioSource audioSource;
     public GameManagerScript gameManagerScript;
+    public float hitForce = 500.0f;
     // Start is called before the first frame update
     public void Start()
     {
@@ -48,7 +49,5 @@ public class CanManagerScript : MonoBehaviour
         cans[activeCan].SetActive(false);
         activeCan++;
         cans[activeCan].SetActive(true);
-        //cans[activeCan].GetComponentInParent<Rigidbody>().AddForce(0, -50, 0);
-        //The commented out line above is to help the cans be more usable by launching them up again when hit. Not sure it worked
     }
 }

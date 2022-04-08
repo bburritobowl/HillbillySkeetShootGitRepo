@@ -530,7 +530,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh21140
+  m_Name: pb_Mesh21276
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -931,7 +931,7 @@ Transform:
   m_GameObject: {fileID: 382758902}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -0.1875999, y: -32.22, z: 5.229904}
-  m_LocalScale: {x: 65, y: 20, z: 2}
+  m_LocalScale: {x: 65, y: 20.866348, z: 2}
   m_Children: []
   m_Father: {fileID: 247305830}
   m_RootOrder: 1
@@ -1305,7 +1305,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh21056
+  m_Name: pb_Mesh21192
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2987,9 +2987,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 15.31793
-  orthographic: 0
-  orthographic size: 5
+  field of view: 26.991467
+  orthographic: 1
+  orthographic size: 5.25
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3013,7 +3013,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.3, y: 1, z: 10}
+  m_LocalPosition: {x: 2.4, y: 1, z: 5.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3342,7 +3342,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211635283}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.31, y: 4.71, z: 53.75}
+  m_LocalPosition: {x: 1.97, y: 4.71, z: 53.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3704,7 +3704,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh21086
+  m_Name: pb_Mesh21222
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4227,16 +4227,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1761269066}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4891e97f4f1b0244db357641c7d45ce5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 2000
-  audioSource: {fileID: 1761269068}
-  gunshot: {fileID: 8300000, guid: ee8701f7a74f4794786799a5d586fda1, type: 3}
-  volume: 1
-  sphereRadius: 224.5
+  hitForce: 500
 --- !u!114 &1761269070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4249,9 +4245,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cb86221195ab064f89c6300b66fd4aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sphereRadius: 10
+  sphereRadius: 1.5
   constantZPos: 53.75
-  hitForce: 1000
   audioSource: {fileID: 1761269068}
   gunshot: {fileID: 8300000, guid: ee8701f7a74f4794786799a5d586fda1, type: 3}
   volume: 4

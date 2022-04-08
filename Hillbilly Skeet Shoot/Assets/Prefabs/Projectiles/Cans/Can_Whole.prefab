@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 895022619985507354}
   m_Layer: 0
   m_Name: Can_Whole
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,4 +110,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8924870ed7ce7494a87c7bd5a7fd7ff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canSwitchScript: {fileID: 0}
+  canManagerScript: {fileID: 0}

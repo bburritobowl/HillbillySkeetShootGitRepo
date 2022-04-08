@@ -11,9 +11,12 @@ public class PropaneTankManagerScript : MonoBehaviour
     public AudioClip explosionAudioClip;
     public AudioSource audioSource;
     public float volume = 3.0f;
+    private Rigidbody rigidbody;
+    public float hitForce = 1000.0f;
     public void Start()
     {
         gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
+        rigidbody = GetComponent<Rigidbody>();
     }
     public void HitByRay()
     {
