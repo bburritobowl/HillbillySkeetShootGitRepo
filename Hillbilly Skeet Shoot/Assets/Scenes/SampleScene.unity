@@ -530,7 +530,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh22922
+  m_Name: pb_Mesh21276
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -931,7 +931,7 @@ Transform:
   m_GameObject: {fileID: 382758902}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -0.1875999, y: -32.22, z: 5.229904}
-  m_LocalScale: {x: 65, y: 20, z: 2}
+  m_LocalScale: {x: 65, y: 20.866348, z: 2}
   m_Children: []
   m_Father: {fileID: 247305830}
   m_RootOrder: 1
@@ -1216,22 +1216,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5844331161365859297, guid: 73542cc0872f40d4aaae4b9b7d02c426,
         type: 3}
-      propertyPath: launchTimer
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5844331161365859297, guid: 73542cc0872f40d4aaae4b9b7d02c426,
-        type: 3}
-      propertyPath: projectiles.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5844331161365859297, guid: 73542cc0872f40d4aaae4b9b7d02c426,
-        type: 3}
-      propertyPath: projectiles.Array.data[1]
-      value: 
-      objectReference: {fileID: 7722585577845020334, guid: e6e388ead6cd06543b2fc287e230e268,
-        type: 3}
-    - target: {fileID: 5844331161365859297, guid: 73542cc0872f40d4aaae4b9b7d02c426,
-        type: 3}
       propertyPath: projectiles.Array.data[2]
       value: 
       objectReference: {fileID: 2327982482823073499, guid: dd2cd81c94007f045ad747911791aabd,
@@ -1251,40 +1235,6 @@ PrefabInstance:
     - target: {fileID: 5844331161365859297, guid: 73542cc0872f40d4aaae4b9b7d02c426,
         type: 3}
       propertyPath: projectiles.Array.data[5]
-      value: 
-      objectReference: {fileID: 2448056299167106901, guid: 4c34727064f24014996c0e8599b5611a,
-        type: 3}
-    - target: {fileID: 5844331161365859297, guid: 73542cc0872f40d4aaae4b9b7d02c426,
-        type: 3}
-      propertyPath: explodingObjects.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5844331161365859297, guid: 73542cc0872f40d4aaae4b9b7d02c426,
-        type: 3}
-      propertyPath: secondaryObjects.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5844331161365859297, guid: 73542cc0872f40d4aaae4b9b7d02c426,
-        type: 3}
-      propertyPath: explodingObjects.Array.data[0]
-      value: 
-      objectReference: {fileID: 2327982482823073499, guid: dd2cd81c94007f045ad747911791aabd,
-        type: 3}
-    - target: {fileID: 5844331161365859297, guid: 73542cc0872f40d4aaae4b9b7d02c426,
-        type: 3}
-      propertyPath: secondaryObjects.Array.data[0]
-      value: 
-      objectReference: {fileID: 6251446656456824353, guid: 538c412f102577b4cb113265c270d60f,
-        type: 3}
-    - target: {fileID: 5844331161365859297, guid: 73542cc0872f40d4aaae4b9b7d02c426,
-        type: 3}
-      propertyPath: secondaryObjects.Array.data[1]
-      value: 
-      objectReference: {fileID: 880895532972178832, guid: 33a300df8844d1b499dcf44b4d124264,
-        type: 3}
-    - target: {fileID: 5844331161365859297, guid: 73542cc0872f40d4aaae4b9b7d02c426,
-        type: 3}
-      propertyPath: secondaryObjects.Array.data[2]
       value: 
       objectReference: {fileID: 2448056299167106901, guid: 4c34727064f24014996c0e8599b5611a,
         type: 3}
@@ -1356,7 +1306,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh22838
+  m_Name: pb_Mesh21192
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3038,9 +2988,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 15.31793
-  orthographic: 0
-  orthographic size: 5
+  field of view: 26.991467
+  orthographic: 1
+  orthographic size: 5.25
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3064,7 +3014,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.3, y: 1, z: 10}
+  m_LocalPosition: {x: 2.4, y: 1, z: 5.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3369,6 +3319,36 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
+--- !u!1 &1211635283
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1211635284}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1211635284
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211635283}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.97, y: 4.71, z: 53.75}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1288242011
 GameObject:
   m_ObjectHideFlags: 0
@@ -3725,7 +3705,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh22868
+  m_Name: pb_Mesh21222
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4123,6 +4103,7 @@ GameObject:
   - component: {fileID: 1761269067}
   - component: {fileID: 1761269069}
   - component: {fileID: 1761269068}
+  - component: {fileID: 1761269070}
   m_Layer: 0
   m_Name: GunManager
   m_TagString: Untagged
@@ -4252,10 +4233,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4891e97f4f1b0244db357641c7d45ce5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 2000
+  hitForce: 500
+--- !u!114 &1761269070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761269066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cb86221195ab064f89c6300b66fd4aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sphereRadius: 1.5
+  constantZPos: 53.75
   audioSource: {fileID: 1761269068}
   gunshot: {fileID: 8300000, guid: ee8701f7a74f4794786799a5d586fda1, type: 3}
-  volume: 1
+  volume: 4
 --- !u!1 &1815506800
 GameObject:
   m_ObjectHideFlags: 0
@@ -4531,22 +4526,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5844331161365859297, guid: 73542cc0872f40d4aaae4b9b7d02c426,
         type: 3}
-      propertyPath: launchTimer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5844331161365859297, guid: 73542cc0872f40d4aaae4b9b7d02c426,
-        type: 3}
-      propertyPath: projectiles.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5844331161365859297, guid: 73542cc0872f40d4aaae4b9b7d02c426,
-        type: 3}
-      propertyPath: projectiles.Array.data[1]
-      value: 
-      objectReference: {fileID: 7722585577845020334, guid: e6e388ead6cd06543b2fc287e230e268,
-        type: 3}
-    - target: {fileID: 5844331161365859297, guid: 73542cc0872f40d4aaae4b9b7d02c426,
-        type: 3}
       propertyPath: projectiles.Array.data[2]
       value: 
       objectReference: {fileID: 2327982482823073499, guid: dd2cd81c94007f045ad747911791aabd,
@@ -4566,40 +4545,6 @@ PrefabInstance:
     - target: {fileID: 5844331161365859297, guid: 73542cc0872f40d4aaae4b9b7d02c426,
         type: 3}
       propertyPath: projectiles.Array.data[5]
-      value: 
-      objectReference: {fileID: 2448056299167106901, guid: 4c34727064f24014996c0e8599b5611a,
-        type: 3}
-    - target: {fileID: 5844331161365859297, guid: 73542cc0872f40d4aaae4b9b7d02c426,
-        type: 3}
-      propertyPath: explodingObjects.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5844331161365859297, guid: 73542cc0872f40d4aaae4b9b7d02c426,
-        type: 3}
-      propertyPath: secondaryObjects.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5844331161365859297, guid: 73542cc0872f40d4aaae4b9b7d02c426,
-        type: 3}
-      propertyPath: explodingObjects.Array.data[0]
-      value: 
-      objectReference: {fileID: 2327982482823073499, guid: dd2cd81c94007f045ad747911791aabd,
-        type: 3}
-    - target: {fileID: 5844331161365859297, guid: 73542cc0872f40d4aaae4b9b7d02c426,
-        type: 3}
-      propertyPath: secondaryObjects.Array.data[0]
-      value: 
-      objectReference: {fileID: 6251446656456824353, guid: 538c412f102577b4cb113265c270d60f,
-        type: 3}
-    - target: {fileID: 5844331161365859297, guid: 73542cc0872f40d4aaae4b9b7d02c426,
-        type: 3}
-      propertyPath: secondaryObjects.Array.data[1]
-      value: 
-      objectReference: {fileID: 880895532972178832, guid: 33a300df8844d1b499dcf44b4d124264,
-        type: 3}
-    - target: {fileID: 5844331161365859297, guid: 73542cc0872f40d4aaae4b9b7d02c426,
-        type: 3}
-      propertyPath: secondaryObjects.Array.data[2]
       value: 
       objectReference: {fileID: 2448056299167106901, guid: 4c34727064f24014996c0e8599b5611a,
         type: 3}

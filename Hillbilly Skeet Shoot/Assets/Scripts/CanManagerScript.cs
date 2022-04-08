@@ -9,6 +9,7 @@ public class CanManagerScript : MonoBehaviour
     public AudioClip gotShotSFX;
     public AudioSource audioSource;
     public GameManagerScript gameManagerScript;
+    public float hitForce = 500.0f;
     // Start is called before the first frame update
     public void Start()
     {

@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class RaycastFiringScript : MonoBehaviour
 {
-    public float hitForce = 2000.0f;
+    public float hitForce = 1000.0f;
     //Particle and sound variables
     //public ParticleSystem muzzleBlast;
-    public AudioSource audioSource;
-    public AudioClip gunshot;
-    [SerializeField] float volume = 4.0f;
+    // public AudioSource audioSource;
+    // public AudioClip gunshot;
+    //[SerializeField] float volume = 4.0f;
     // public GameObject bulletHoleParticles;
     // public GameObject boomBoomParticles;
     private Camera mainCamera;
@@ -33,7 +33,7 @@ public class RaycastFiringScript : MonoBehaviour
     void FireTheGun()
     {
         //Play gunshot noise
-        audioSource.PlayOneShot(gunshot, volume);
+        //audioSource.PlayOneShot(gunshot, volume);
 
         RaycastHit hit;
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
@@ -43,11 +43,11 @@ public class RaycastFiringScript : MonoBehaviour
         {
             Debug.Log("Did Hit - " + hit.transform.name);
 
-            if (hit.rigidbody != null)
+           if (hit.rigidbody != null)
             {
                 // blast it away!
                 hit.rigidbody.AddForce (-hit.normal * hitForce);
-                hit.transform.SendMessage ("HitByRay");
+                //hit.transform.SendMessage ("HitByRay");
                 // this particle system is the BIG BOOM for when we hit cars or other objects that we send flying
                 // GameObject tempBoomEffect;
                 // tempBoomEffect = Instantiate(boomBoomParticles, hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal)) as GameObject;
