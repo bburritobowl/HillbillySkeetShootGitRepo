@@ -28,8 +28,11 @@ public class AdScript : MonoBehaviour
         // Check if UnityAds ready before calling Show method:
         if (Advertisement.IsReady())
         {
-            Advertisement.Show("Level Restart");
+            Debug.Log("Above");
+            Advertisement.Show("Level_Restart");
+            Debug.Log("Below");
         }
+
         else
         {
             Debug.Log("Interstitial ad not ready at the moment! Please try again later!");
