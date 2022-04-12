@@ -19,7 +19,7 @@ public class AdScript : MonoBehaviour
     void Start()
     {
         // Initialize the Ads service:
-        Advertisement.Initialize(gameId);
+       // Advertisement.Initialize(gameId);
         Advertisement.Initialize(gameId, testMode);
     }
 
