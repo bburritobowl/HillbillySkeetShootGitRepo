@@ -10,7 +10,7 @@ public class GameManagerScript : MonoBehaviour
     public int highScore;
     private string HighScore =  "HighScore";
     private string Score = "Score";
-    public int score = 0;
+    public int score;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI highScoreText;
     public int lives = 3;
@@ -24,7 +24,7 @@ public class GameManagerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        score = 0;
+        // score = 0;
         highScoreText.text = "Highscore: " + PlayerPrefs.GetInt(HighScore);
         playScreen.SetActive(true);
         pauseScreen.SetActive(false);
@@ -35,6 +35,8 @@ public class GameManagerScript : MonoBehaviour
     void Update()
     {
         scoreText.text = "Score: " + score;
+        PlayerPrefs.SetInt(Score, score); //make it so that you save the score in playerprefs and then when you load the actual LEVEL (only the level!) it resets to 0
+
         if(PlayerPrefs.GetInt(HighScore) < score)
         {
             PlayerPrefs.SetInt(HighScore, score);
