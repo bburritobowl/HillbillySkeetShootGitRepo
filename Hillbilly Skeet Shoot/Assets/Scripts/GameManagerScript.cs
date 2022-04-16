@@ -32,8 +32,9 @@ public class GameManagerScript : MonoBehaviour
 
         //Check which scene so we know to reset score or not
         currentScene = SceneManager.GetActiveScene();
-        if(currentScene.name == "SampleScene");
+        if(currentScene.name == "MainLevel"); ///This is the part that's messing up
         {
+            Debug.Log("This shouldn't be running unless we're in the main level");
             score = 0;
             PlayerPrefs.SetInt(Score, 0);
         }
@@ -45,7 +46,7 @@ public class GameManagerScript : MonoBehaviour
     {
         if(PlayerPrefs.GetInt(Score) < score)
         {
-            PlayerPrefs.SetInt(Score, score); //make it so that you save the score in playerprefs and then when you load the actual LEVEL (only the level!) it resets to 0
+            PlayerPrefs.SetInt(Score, score);
             scoreText.text = "Score: " + PlayerPrefs.GetInt(Score);
             Debug.Log(PlayerPrefs.GetInt(Score));
         }
