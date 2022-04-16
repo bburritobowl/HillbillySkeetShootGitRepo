@@ -20,22 +20,35 @@ public class GameManagerScript : MonoBehaviour
     public GameObject pauseScreen;
 
     public AdScript adScript;
+    [SerializeField] Scene currentScene;
 
     // Start is called before the first frame update
     void Start()
     {
-        // score = 0;
         highScoreText.text = "Highscore: " + PlayerPrefs.GetInt(HighScore);
         playScreen.SetActive(true);
         pauseScreen.SetActive(false);
         Time.timeScale = 1;
+
+        //Check which scene so we know to reset score or not
+        currentScene = SceneManager.GetActiveScene();
+        if(currentScene.name == "SampleScene");
+        {
+            score = 0;
+            PlayerPrefs.SetInt(Score, 0);
+        }
+        scoreText.text = "Score: " + PlayerPrefs.GetInt(Score);
     }
 
     // Update is called once per frame
     void Update()
     {
-        scoreText.text = "Score: " + score;
-        PlayerPrefs.SetInt(Score, score); //make it so that you save the score in playerprefs and then when you load the actual LEVEL (only the level!) it resets to 0
+        if(PlayerPrefs.GetInt(Score) < score)
+        {
+            PlayerPrefs.SetInt(Score, score); //make it so that you save the score in playerprefs and then when you load the actual LEVEL (only the level!) it resets to 0
+            scoreText.text = "Score: " + PlayerPrefs.GetInt(Score);
+            Debug.Log(PlayerPrefs.GetInt(Score));
+        }
 
         if(PlayerPrefs.GetInt(HighScore) < score)
         {
