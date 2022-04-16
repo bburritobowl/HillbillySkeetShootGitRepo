@@ -32,7 +32,7 @@ public class GameManagerScript : MonoBehaviour
 
         //Check which scene so we know to reset score or not
         currentScene = SceneManager.GetActiveScene();
-        if(currentScene.name == "MainLevel"); ///This is the part that's messing up
+        if(currentScene.name == "MainLevel"); ///This is the part that's messing up. it activates when the ads do and idk how to work around that
         {
             Debug.Log("This shouldn't be running unless we're in the main level");
             score = 0;
@@ -70,7 +70,7 @@ public class GameManagerScript : MonoBehaviour
 
     public void GameOver()
     {
-        PlayerPrefs.SetInt(Score, score);
+        //PlayerPrefs.SetInt(Score, score);
         adScript.ShowInterstitialAd(); //play ad
         SceneManager.LoadScene("GameOverScene");
     }

@@ -28,9 +28,7 @@ public class AdScript : MonoBehaviour
         // Check if UnityAds ready before calling Show method:
         if (Advertisement.IsReady())
         {
-            Debug.Log("Above");
             Advertisement.Show("Level_Restart");
-            Debug.Log("Below");
         }
 
         else
