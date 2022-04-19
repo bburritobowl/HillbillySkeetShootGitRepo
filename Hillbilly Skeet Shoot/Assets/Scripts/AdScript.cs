@@ -19,7 +19,7 @@ public class AdScript : MonoBehaviour
     void Start()
     {
         // Initialize the Ads service:
-        Advertisement.Initialize(gameId);
+       // Advertisement.Initialize(gameId);
         Advertisement.Initialize(gameId, testMode);
     }
 
@@ -28,8 +28,9 @@ public class AdScript : MonoBehaviour
         // Check if UnityAds ready before calling Show method:
         if (Advertisement.IsReady())
         {
-            Advertisement.Show("Level Restart");
+            Advertisement.Show("Level_Restart");
         }
+
         else
         {
             Debug.Log("Interstitial ad not ready at the moment! Please try again later!");

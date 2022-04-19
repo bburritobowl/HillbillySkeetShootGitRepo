@@ -157,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 100, y: 47}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 196.25229, y: 47}
+  m_SizeDelta: {x: 296.2523, y: 50}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &85662700
 MonoBehaviour:
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -372,14 +372,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1788538004}
         m_TargetAssemblyTypeName: GameManagerScript, Assembly-CSharp
-        m_MethodName: LoadSceneButton
-        m_Mode: 5
+        m_MethodName: PlayAgain
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: SampleScene
+          m_StringArgument: MainLevel
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &338624971
@@ -1181,7 +1181,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -100, y: -2.9999924}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 346.1003, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1003887356
 MonoBehaviour:
@@ -1383,6 +1383,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1788538005}
   - component: {fileID: 1788538004}
+  - component: {fileID: 1788538006}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1410,6 +1411,9 @@ MonoBehaviour:
   livesUI: []
   playScreen: {fileID: 300705258}
   pauseScreen: {fileID: 2139492991}
+  adScript: {fileID: 1788538006}
+  currentScene:
+    m_Handle: 0
 --- !u!4 &1788538005
 Transform:
   m_ObjectHideFlags: 0
@@ -1424,6 +1428,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1788538006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788538003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5b75406246ef3f48a7a910b3c8ff584, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1911544537
 GameObject:
   m_ObjectHideFlags: 0

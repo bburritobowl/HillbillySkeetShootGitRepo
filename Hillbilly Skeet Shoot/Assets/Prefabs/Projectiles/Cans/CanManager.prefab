@@ -58,7 +58,10 @@ MonoBehaviour:
   - {fileID: 3984251726978706122}
   - {fileID: 8991005318127462004}
   activeCan: 0
+  gotShotSFX: {fileID: 8300000, guid: 7f55e020712cbf64eae0ed2cd4ce6cbd, type: 3}
+  audioSource: {fileID: 1704100574699884656}
   gameManagerScript: {fileID: 0}
+  hitForce: 500
 --- !u!54 &1572100613663649976
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -98,7 +101,7 @@ BoxCollider:
   m_GameObject: {fileID: 3430898322791213690}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.084200196, y: 0.11946644, z: 0.09902835}
   m_Center: {x: -0.028875869, y: 0.011940531, z: 0.13662122}
@@ -126,7 +129,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -376,11 +379,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5777730217545727512, guid: 7ba599e6efe0ce140a8d35abe9de0b58,
         type: 3}
-      propertyPath: canSwitchScript
-      value: 
-      objectReference: {fileID: 7087318023549577297}
-    - target: {fileID: 5777730217545727512, guid: 7ba599e6efe0ce140a8d35abe9de0b58,
-        type: 3}
       propertyPath: canManagerScript
       value: 
       objectReference: {fileID: 7087318023549577297}
@@ -480,8 +478,7 @@ PrefabInstance:
       propertyPath: canManagerScript
       value: 
       objectReference: {fileID: 7087318023549577297}
-    m_RemovedComponents:
-    - {fileID: 2604152208129244326, guid: 6bb6ebcd2ed06974da120a17c877ee20, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bb6ebcd2ed06974da120a17c877ee20, type: 3}
 --- !u!1 &7628790192205721317 stripped
 GameObject:
@@ -502,11 +499,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7512157711331759801}
     m_Modifications:
-    - target: {fileID: 2275566531247765673, guid: abf10301c2ce4c640894431d684fb5fb,
-        type: 3}
-      propertyPath: canSwitchScript
-      value: 
-      objectReference: {fileID: 7087318023549577297}
     - target: {fileID: 2275566531247765673, guid: abf10301c2ce4c640894431d684fb5fb,
         type: 3}
       propertyPath: canManagerScript
@@ -572,13 +564,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Can_Crush2
       objectReference: {fileID: 0}
-    - target: {fileID: 9028431583158593255, guid: abf10301c2ce4c640894431d684fb5fb,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8181359787692842057, guid: abf10301c2ce4c640894431d684fb5fb, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abf10301c2ce4c640894431d684fb5fb, type: 3}
 --- !u!1 &3984251726978706122 stripped
 GameObject:
