@@ -30,14 +30,6 @@ public class GameManagerScript : MonoBehaviour
         pauseScreen.SetActive(false);
         Time.timeScale = 1;
 
-        //Check which scene so we know to reset score or not
-        currentScene = SceneManager.GetActiveScene();
-        if(currentScene.name == "MainLevel"); ///This is the part that's messing up. it activates when the ads do and idk how to work around that
-        {
-            Debug.Log("This shouldn't be running unless we're in the main level");
-            score = 0;
-            PlayerPrefs.SetInt(Score, 0);
-        }
         scoreText.text = "Score: " + PlayerPrefs.GetInt(Score);
     }
 
@@ -80,6 +72,19 @@ public class GameManagerScript : MonoBehaviour
     {
         adScript.ShowInterstitialAd();
         SceneManager.LoadScene(sceneName);
+        ResetScore();
+    }
+
+    public void ResetScore()
+    {
+        //Check which scene so we know to reset score or not
+        currentScene = SceneManager.GetActiveScene();
+        if(currentScene.name == "MainLevel"); ///This is the part that's messing up. it activates when the ads do and idk how to work around that
+        {
+            Debug.Log("This shouldn't be running unless we're in the main level");
+            score = 0;
+            PlayerPrefs.SetInt(Score, 0);
+        }
     }
     public void PauseGame()
     {
