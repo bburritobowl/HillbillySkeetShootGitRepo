@@ -75,6 +75,12 @@ public class GameManagerScript : MonoBehaviour
         ResetScore();
     }
 
+    public void PlayAgain()
+    {
+        SceneManager.LoadScene("MainLevel");
+        ResetScore();
+    }
+
     public void ResetScore()
     {
         //Check which scene so we know to reset score or not
