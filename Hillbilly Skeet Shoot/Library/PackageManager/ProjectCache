@@ -6,8 +6,8 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637846956438509583
-    m_Hash: 3548375193
+      ticks: 637853042144979852
+    m_Hash: 3888790934
   m_LockFileStatus:
     m_FilePath: C:/Users/Kanne/Documents/MobileGameDevStuuf/HillbilySkeetShoot/HillbillySkeetShootGitRepo/Hillbilly
       Skeet Shoot/Packages/packages-lock.json
@@ -15,8 +15,8 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637846956559870470
-    m_Hash: 6547624
+      ticks: 637853042144989329
+    m_Hash: 1728382937
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -183,6 +183,7 @@ m_PackageAssets:
         - 1.14.12
         - 1.14.13
         - 1.14.15
+        - 1.14.16
         - 1.15.1
         - 1.15.4
         - 1.15.7
@@ -190,6 +191,7 @@ m_PackageAssets:
         - 1.15.12
         - 1.15.13
         - 1.15.15
+        - 1.15.16
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -206,6 +208,7 @@ m_PackageAssets:
         - 1.15.12
         - 1.15.13
         - 1.15.15
+        - 1.15.16
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -216,7 +219,7 @@ m_PackageAssets:
         - 2.1.0-preview.3
         - 2.1.0-preview.5
         - 2.1.0-preview.6
-        verified: 1.15.15
+        verified: 1.15.16
       dependencies:
       - name: com.unity.services.core
         version: 1.0.1
