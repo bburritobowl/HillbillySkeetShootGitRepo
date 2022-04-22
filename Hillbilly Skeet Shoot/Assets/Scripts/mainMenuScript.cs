@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 public class mainMenuScript : MonoBehaviour
@@ -21,6 +22,13 @@ public class mainMenuScript : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void gobacktomenupane()
+    {
+        CuteOpeningScene.SetActive(true);
+        SettingsPanel.SetActive(false);
+        MainMenuPanel.SetActive(false);
     }
 
     public void PlayGame()
@@ -51,6 +59,18 @@ public class mainMenuScript : MonoBehaviour
     public void gotomainmenu()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public AudioMixer audioMixerEffects;
+    public AudioMixer audioMixerMusic;
+    public void setvolumeEffects(float volume)
+    {
+        audioMixerEffects.SetFloat("volumeeffects", volume);
+    }
+
+    public void setvolumeMusic(float volume)
+    {
+        audioMixerMusic.SetFloat("volumemusic", volume);
     }
 
 }

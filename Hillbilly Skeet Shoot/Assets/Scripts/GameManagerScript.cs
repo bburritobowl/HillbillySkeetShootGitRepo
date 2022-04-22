@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.Audio;
 
 public class GameManagerScript : MonoBehaviour
 {
@@ -26,6 +27,8 @@ public class GameManagerScript : MonoBehaviour
         highScoreText.text = "Highscore: " + PlayerPrefs.GetInt(HighScore);
         playScreen.SetActive(true);
         pauseScreen.SetActive(false);
+        SettingsPanel.SetActive(false);
+        areyousurepanel.SetActive(false);
         Time.timeScale = 1;
     }
 
@@ -65,6 +68,7 @@ public class GameManagerScript : MonoBehaviour
     {
         pauseScreen.SetActive(true);
         playScreen.SetActive(false);
+        SettingsPanel.SetActive(false);
         Time.timeScale = 0;
     }
     public void Resume()
@@ -73,4 +77,33 @@ public class GameManagerScript : MonoBehaviour
         playScreen.SetActive(true);
         Time.timeScale = 1;
     }
+
+    public AudioMixer audioMixerEffects;
+    public AudioMixer audioMixerMusic;
+    public GameObject SettingsPanel;
+    public void setvolumeEffects(float volume)
+    {
+        audioMixerEffects.SetFloat("volumeeffects", volume);
+    }
+
+    public void setvolumeMusic(float volume)
+    {
+        audioMixerMusic.SetFloat("volumemusic", volume);
+    }
+
+    public void settings()
+    {
+        SettingsPanel.SetActive(true);
+       areyousurepanel.SetActive(false);
+    }
+   public GameObject areyousurepanel;
+    public void resetHighscorepressed()
+    {
+        areyousurepanel.SetActive(true);
+    }
+    public void areyousureansweryes()
+    {
+         PlayerPrefs.SetInt(HighScore, 0);
+    }
+
 }
